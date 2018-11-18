@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>payment Form</title>
+
+    <!-- Font Icon -->
+    <!--<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">-->
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+		.btn{
+				width: 50%;
+	  			border-radius: 5px;
+	  			-moz-border-radius: 5px;
+	  			-webkit-border-radius: 5px;
+	  			-o-border-radius: 5px;
+	  			-ms-border-radius: 5px;
+	  			padding: 17px 20px;
+	  			box-sizing: border-box;
+	  			font-size: 14px;
+	  			font-weight: 700;
+	  			color: #fff;
+	  			text-transform: uppercase;
+	  			border: none;
+	  			background-image: -moz-linear-gradient(to left, #74ebd5, #9face6);
+			  background-image: -ms-linear-gradient(to left, #74ebd5, #9face6);
+			  background-image: -o-linear-gradient(to left, #74ebd5, #9face6);
+			  background-image: -webkit-linear-gradient(to left, #74ebd5, #9face6);
+			  background-image: linear-gradient(to left, #74ebd5, #9face6); 
+			  cursor:pointer;
+		}
+		
+	</style>
+    
+</head>
+<body>
+    <div class="main">
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form  id="signup-form" class="signup-form" action="payment.php" method="POST">
+                        <h1 class="form-title">PAYMENT DETAILS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img  src="http://i76.imgup.net/accepted_c22e0.png" align="center"></h1>                          			
+              			<pre><button type="button" class="btn btn-success btn-lg"  style="border-radius: 24px;padding:5px;width:50%" href="#">CREDIT CARD</button><button type="button" class="btn btn-success btn-lg"  style="border-radius: 24px;padding:5px;width:50%"  href="#">DEBIT CARD</button></pre>
+              			
+              			<!--<pre><h2 class="form-title"><a href="#">CREDIT CARD</a>       <a href="#">DEBIT CARD</a></h2></pre>-->
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="cname" id="cname" placeholder="Name on card" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="cnumber" id="cnumber" placeholder="card number" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="cvvcode" id="cvvcode" placeholder="CVV number" required/>
+                        </div>
+                         <div class="form-group">
+                            <input type="text" class="form-input" name="phone" id="phone" placeholder="mobile number" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="expdate" id="expdate" placeholder="expirydate format:DD/MM/YYYY" required/>
+                        </div>
+                        <div>
+                        	<p align="center"><font style="border-radius: 24px;padding:10px;" class="btn btn-success btn-lg">Amount to pay(5000/-)
+							</font>
+							</p>
+                        </div>
+                        <br><br>
+                        <div class="zoom">
+                        <div class="form-group">
+                            <!--<div class="zoom">-->
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Pay"/>
+                            <!--</div>-->
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <!--<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>-->
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
